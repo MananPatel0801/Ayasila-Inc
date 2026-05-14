@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ayasila Inc. — Professional structural steel consulting, detailing, and project support services in Canada." />
+  <title>Ayasila Inc. | Structural Steel Consulting & Detailing</title>
+
+  <!-- Favicon — icon-only mark -->
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/images/logo-icon.jpg" />
+  <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/images/logo-icon.jpg" />
+
+  <!-- Google Fonts: Playfair Display + Barlow + Barlow Condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+
+      <!-- Brand -->
+      <a href="#hero" class="navbar__brand" aria-label="Ayasila Inc. home">
+        <img src="assets/images/logo-icon.jpg"
+             alt="Ayasila icon mark"
+             class="navbar__icon"
+             width="32" height="32" />
+        <span class="navbar__wordmark">AYASILA</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="navbar__links" role="list">
+        <li><a href="#hero"     class="navbar__link">Home</a></li>
+        <li><a href="#about"    class="navbar__link">About</a></li>
+        <li><a href="#services" class="navbar__link">Services</a></li>
+        <li><a href="#why-us"   class="navbar__link">Why Us</a></li>
+        <li><a href="#contact"  class="navbar__link">Contact</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="navbar__controls">
+        <!-- Theme toggle -->
+        <button class="theme-toggle" id="themeToggle"
+                aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburgerBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu" role="menu" aria-hidden="true">
+      <a href="#hero"     class="mobile-menu__link" role="menuitem">Home</a>
+      <a href="#about"    class="mobile-menu__link" role="menuitem">About</a>
+      <a href="#services" class="mobile-menu__link" role="menuitem">Services</a>
+      <a href="#why-us"   class="mobile-menu__link" role="menuitem">Why Us</a>
+      <a href="#contact"  class="mobile-menu__link" role="menuitem">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- =============================================
+       SECTION 1 — HERO
+  ============================================= -->
+  <section id="hero" class="hero" aria-label="Hero">
+
+    <div class="hero__content">
+      <!-- Full logo — swapped by JS on theme change -->
+      <img src="assets/images/logo-full-light.png"
+           alt="Ayasila Inc. full logo"
+           class="hero__logo"
+           id="heroLogo" />
+
+      <!-- Punchline -->
+      <p class="hero__tagline">
+        Strong structures begin with accurate planning,
+        reliable communication, and quality execution.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero__cta">
+        <a href="#services" class="btn btn--filled">Our Services</a>
+        <a href="#contact"  class="btn btn--outlined">Get In Touch</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =============================================
+       SECTION 2 — ABOUT
+  ============================================= -->
+  <section id="about" class="about section" aria-label="About Ayasila">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Left: text -->
+        <div class="about__text">
+          <h2 class="section-heading">
+            Building with Integrity, Defined by Precision.
+          </h2>
+          <p class="about__body">
+            At Ayasila, we provide professional consulting, detailing,
+            and project support services for the construction and
+            structural steel industry. We specialize in delivering
+            practical, accurate, and efficient solutions that bridge
+            the gap between architectural vision and physical
+            fabrication.
+          </p>
+        </div>
+
+        <!-- Right: Origin story card -->
+        <div class="about__card">
+          <h3 class="about__card-heading">The Meaning of Ayasila</h3>
+          <p class="about__card-sub">Sanskrit · Ayas (Metal) + Sila (Foundation)</p>
+          <p class="about__card-body">
+            The name Ayasila is more than a brand — it is our
+            operating philosophy. We believe a project's success is
+            built on the integrity of the data, the strength of the
+            planning, and the character of the people behind the work.
+            We combine this timeless commitment to quality with
+            modern, cutting-edge technology.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION 3 — SERVICES
+  ============================================= -->
+  <section id="services" class="services section" aria-label="Our services">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 class="section-heading">Our Core Services</h2>
+        <p class="section-subheading">
+          A full suite of technical services designed to reduce errors
+          and maximize efficiency.
+        </p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Card 1 -->
+        <article class="service-card" aria-label="Structural Steel Detailing">
+          <span class="service-card__icon" aria-hidden="true">⬡</span>
+          <h3 class="service-card__title">Structural Steel Detailing</h3>
+          <p class="service-card__body">High-precision shop drawings using Tekla Structures.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="service-card" aria-label="3D Modeling">
+          <span class="service-card__icon" aria-hidden="true">◈</span>
+          <h3 class="service-card__title">3D Modeling</h3>
+          <p class="service-card__body">Comprehensive structural and architectural modeling in Revit.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="service-card" aria-label="Estimation and Quantity Takeoffs">
+          <span class="service-card__icon" aria-hidden="true">▦</span>
+          <h3 class="service-card__title">Estimation &amp; Quantity Takeoffs</h3>
+          <p class="service-card__body">Accurate material counting to protect your project margins.</p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="service-card" aria-label="Project Management and Coordination">
+          <span class="service-card__icon" aria-hidden="true">◎</span>
+          <h3 class="service-card__title">Project Management &amp; Coordination</h3>
+          <p class="service-card__body">Expert oversight to keep your timelines on track.</p>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="service-card" aria-label="Steel Fabrication Support">
+          <span class="service-card__icon" aria-hidden="true">⬘</span>
+          <h3 class="service-card__title">Steel Fabrication Support</h3>
+          <p class="service-card__body">Optimizing workflow between design and the fabrication shop.</p>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="service-card" aria-label="General Construction Consulting">
+          <span class="service-card__icon" aria-hidden="true">⬟</span>
+          <h3 class="service-card__title">General Construction Consulting</h3>
+          <p class="service-card__body">Professional guidance for diverse structural and renovation projects.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION 4 — WHY US
+  ============================================= -->
+  <section id="why-us" class="why-us section" aria-label="Why partner with us">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 class="section-heading">Why Partner With Us?</h2>
+        <p class="section-subheading">
+          In construction, a single error in detailing can lead to costly
+          delays. We help clients stay on schedule and within budget.
+        </p>
+      </div>
+
+      <!-- Three pillar cards -->
+      <div class="pillars">
+
+        <div class="pillar-card">
+          <span class="pillar-card__number" aria-hidden="true">01</span>
+          <h3 class="pillar-card__title">Technical Precision</h3>
+          <p class="pillar-card__body">
+            We leverage the latest BIM technology to eliminate clashes
+            and errors before they reach the field.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-card__number" aria-hidden="true">02</span>
+          <h3 class="pillar-card__title">Industry Experience</h3>
+          <p class="pillar-card__body">
+            Our team understands the realities of the fabrication shop
+            and the construction site — not just the drawing board.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-card__number" aria-hidden="true">03</span>
+          <h3 class="pillar-card__title">Reliable Communication</h3>
+          <p class="pillar-card__body">
+            We act as an extension of your team, ensuring transparency
+            and clarity from concept to completion.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Software strip -->
+      <div class="software-strip" aria-label="Software tools we use">
+        <span class="software-strip__label">Software We Use:</span>
+        <div class="software-strip__tags">
+          <span class="pill">Tekla Structures</span>
+          <span class="pill">Autodesk Revit</span>
+          <span class="pill">PowerFab</span>
+          <span class="pill">AutoCAD</span>
+          <span class="pill">Bluebeam</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION 5 — CONTACT
+  ============================================= -->
+  <section id="contact" class="contact section" aria-label="Contact us">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 class="section-heading">Start a Conversation</h2>
+        <p class="section-subheading">
+          Have a project in mind? Send us a message and we'll get back
+          to you promptly.
+        </p>
+      </div>
+
+      <div class="contact__grid">
+
+        <!-- Left: contact info -->
+        <div class="contact__info">
+          <div class="contact-item">
+            <span class="contact-item__icon" aria-hidden="true">📍</span>
+            <div>
+              <strong class="contact-item__label">Location</strong>
+              <p class="contact-item__value">Brampton, Ontario, Canada</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__icon" aria-hidden="true">✉</span>
+            <div>
+              <strong class="contact-item__label">Email</strong>
+              <p class="contact-item__value">
+                <a href="mailto:info@ayasila.ca" class="contact-item__link">
+                  info@ayasila.ca
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong class="contact-item__label">Response Time</strong>
+              <p class="contact-item__value">Within 1–2 business days</p>
+            </div>
+          </div>
+
+          <p class="contact__trust">
+            Serving contractors, fabricators, and construction teams
+            across Canada.
+          </p>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact__form-wrap">
+
+          <!-- TODO: Replace mailto with backend form handler
+               or Formspree endpoint before going live -->
+          <form class="contact-form"
+                id="contactForm"
+                action="mailto:info@ayasila.ca"
+                method="POST"
+                enctype="text/plain"
+                novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="fullName" name="fullName"
+                       class="form-input" placeholder="Jane Smith"
+                       required autocomplete="name" />
+              </div>
+
+              <div class="form-group">
+                <label for="companyName" class="form-label">Company Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="companyName" name="companyName"
+                       class="form-input" placeholder="Acme Fabricators Ltd."
+                       required autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="emailAddress" name="emailAddress"
+                       class="form-input" placeholder="jane@company.ca"
+                       required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number <span class="form-label--optional">(optional)</span></label>
+                <input type="tel" id="phoneNumber" name="phoneNumber"
+                       class="form-input" placeholder="+1 (905) 555-0100"
+                       autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceInterest" class="form-label">Service of Interest <span aria-hidden="true">*</span></label>
+              <select id="serviceInterest" name="serviceInterest"
+                      class="form-input form-select" required>
+                <option value="" disabled selected>Select a Service...</option>
+                <option value="Structural Steel Detailing">Structural Steel Detailing</option>
+                <option value="3D Modeling">3D Modeling</option>
+                <option value="Estimation & Quantity Takeoffs">Estimation &amp; Quantity Takeoffs</option>
+                <option value="Project Management">Project Management</option>
+                <option value="Steel Fabrication Support">Steel Fabrication Support</option>
+                <option value="General Construction Consulting">General Construction Consulting</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="projectDetails" class="form-label">Project Details <span aria-hidden="true">*</span></label>
+              <textarea id="projectDetails" name="projectDetails"
+                        class="form-input form-textarea"
+                        rows="5"
+                        placeholder="Briefly describe your project, timeline, and any specific requirements..."
+                        required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--submit">
+              Send Inquiry
+            </button>
+
+          </form>
+
+          <!-- Success message (hidden by default, shown via JS) -->
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            Thank you! Your inquiry has been received. We'll be in touch
+            within 1–2 business days.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__left">© 2026 Ayasila Inc. All rights reserved.</p>
+      <p class="footer__right">Incorporated under the Canada Business Corporations Act</p>
+    </div>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
